@@ -145,8 +145,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f46-v3-d1G">
-                                <frame key="frameInset" width="375" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f46-v3-d1G">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="253" horizontalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="hSX-zY-vjT">
                                         <constraints>
@@ -170,7 +169,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zhd-ea-BKr">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zhd-ea-BKr">
                                         <rect key="frame" x="16" y="282" width="343" height="313"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="313" id="sFM-7h-fDS"/>
@@ -178,7 +177,7 @@
                                     </mapView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Zhd-ea-BKr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f46-v3-d1G" secondAttribute="leading" constant="16" id="09F-Wl-gY9"/>
+                                    <constraint firstItem="Zhd-ea-BKr" firstAttribute="leading" secondItem="f46-v3-d1G" secondAttribute="leading" constant="16" id="09F-Wl-gY9"/>
                                     <constraint firstItem="48m-cw-Y61" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f46-v3-d1G" secondAttribute="leading" constant="8" id="3d7-Nc-bur"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="znU-nB-9oH" secondAttribute="trailing" constant="8" id="3lw-TP-21E"/>
                                     <constraint firstAttribute="bottom" secondItem="Zhd-ea-BKr" secondAttribute="bottom" constant="8" id="FaY-qC-tFZ"/>
@@ -193,7 +192,8 @@
                                     <constraint firstItem="48m-cw-Y61" firstAttribute="centerX" secondItem="znU-nB-9oH" secondAttribute="centerX" id="dOY-U4-TNL"/>
                                     <constraint firstItem="l6Y-9T-yAl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f46-v3-d1G" secondAttribute="leading" constant="8" id="eCm-vz-Jfs"/>
                                     <constraint firstItem="znU-nB-9oH" firstAttribute="centerX" secondItem="hSX-zY-vjT" secondAttribute="centerX" id="evh-xS-0Ri"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zhd-ea-BKr" secondAttribute="trailing" constant="16" id="kC3-Ov-D0C"/>
+                                    <constraint firstItem="Zhd-ea-BKr" firstAttribute="centerX" secondItem="f46-v3-d1G" secondAttribute="centerX" id="iWJ-w4-zjr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zhd-ea-BKr" secondAttribute="trailing" constant="16" id="kC3-Ov-D0C"/>
                                     <constraint firstItem="Zhd-ea-BKr" firstAttribute="top" secondItem="l6Y-9T-yAl" secondAttribute="bottom" constant="8" id="lTq-aW-1Nb"/>
                                     <constraint firstItem="znU-nB-9oH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f46-v3-d1G" secondAttribute="leading" constant="8" id="vr3-cK-PaV"/>
                                 </constraints>
@@ -232,9 +232,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-Ug-zuu">
-                                <frame key="frameInset" width="1000" height="1000"/>
-                            </mapView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-Ug-zuu"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -250,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbv-ea-YS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3566" y="1011"/>
+            <point key="canvasLocation" x="3565.5999999999999" y="1010.6446776611695"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HLW-4O-Yax">

@@ -2,7 +2,7 @@
 
 **Yelp** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-Time spent: **3** hours spent in total
+Time spent: **8** hours spent in total
 
 ## User Stories
 
@@ -17,21 +17,28 @@ The following **optional** features are implemented:
 - [√] Search results page
 - [√] Infinite scroll for restaurant results.
 - [√] Implement map view of restaurant results.
-- [ ] Implement the restaurant detail page.
+- [√] Implement the restaurant detail page.
 
 The following **additional** features are implemented:
 
 - [√] App will remember last search result and launches with that result even after you close it.
 - [√] Added loading wheel
+- [√] Added scroll view in detail page of map view, and correct autolayout constraints
+- [√] Added app icon
+
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. Implementing custom annotations
+2. Autolayout when you have both landscape and portrait
 
 ## Video Walkthrough 
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented user stories in portrait:
+
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Here's a walkthrough of implemented user stories in landscape:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
