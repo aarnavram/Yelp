@@ -89,7 +89,7 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        self.searchBar.showsCancelButton = true
+        self.searchBar.showsCancelButton = false
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
@@ -150,8 +150,20 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let destinationViewController = segue.destination as! MapViewController
-        destinationViewController.businessArray = self.businesses
+        searchBar.resignFirstResponder()
+        if (segue.identifier == "map") {
+            let destinationViewController = segue.destination as! MapViewController
+            destinationViewController.businessArray = self.businesses
+        }
+        if (segue.identifier == "detail") {
+            let cell = sender as! BusinessCell
+            let destinationVC = segue.destination as! DetailViewController
+            destinationVC.name = cell.nameLabel.text
+            destinationVC.ratingImage = cell.ratingImageView.image
+            destinationVC.image = cell.thumbImageView.image
+            destinationVC.address = cell.addressLabel.text
+            
+        }
     }
     
     
